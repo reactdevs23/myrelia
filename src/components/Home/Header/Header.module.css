@@ -1,0 +1,114 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: -15px;
+}
+
+.play {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+  border: 1px solid #fdaf27;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 15px;
+  gap: 15px;
+}
+.registered {
+  justify-content: flex-start;
+}
+.text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 120%;
+
+  color: #fdaf27;
+}
+.heading {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 130%;
+
+  color: #fdaf27;
+}
+.icon {
+  color: #fdaf27;
+  font-size: 35px;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  display: block;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  color: #000000;
+  background: #fdaf27;
+  border-radius: 10px;
+  padding: 20px 35px;
+}
+@media only screen and (max-width: 1199px) {
+  .wrapper {
+    grid-template-columns: 1fr 200px 1fr;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    grid-template-columns: 1fr 150px 1fr;
+  }
+  .play {
+    gap: 7px;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  .icon {
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .button {
+    padding: 18px 28px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .play {
+    gap: 8px;
+  }
+  .registered {
+    order: 2;
+  }
+  .buttonContainer {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    width: 200%;
+  }
+  .button {
+    padding: 12px 24px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .buttonContainer {
+    width: 100%;
+  }
+}

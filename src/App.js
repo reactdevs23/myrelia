@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Layout/Navbar/Navbar";
+import PlayMyrelia from "./components/Layout/PlayMyrelia/PlayMyrelia";
+import Banner from "./components/Layout/Banner/Banner";
+import AboutUs from "./components/Layout/AboutUs/AboutUs";
+import Layout from "./components/Layout/Layout";
+import JoinUs from "./components/JoinUs/JoinUs";
+import Ranking from "./components/Ranking/Ranking";
+import Home from "./components/Home/Home";
+import Faq from "./components/Faq/Faq";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        {" "}
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/joinus" element={<JoinUs />}></Route>
+          <Route path="/ranking" element={<Ranking />}></Route>
+          <Route path="/faq" element={<Faq />}></Route>
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
