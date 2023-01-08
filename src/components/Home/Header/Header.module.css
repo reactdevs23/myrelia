@@ -15,6 +15,24 @@
   padding: 15px;
   gap: 15px;
 }
+.copy {
+  position: relative;
+  cursor: pointer;
+}
+.copy::before {
+  content: "Copied";
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-family: "Inter";
+  font-weight: 400;
+  color: #fdaf27;
+  background-color: #000;
+  border: 1px solid #fdaf27;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .registered {
   justify-content: flex-start;
 }
