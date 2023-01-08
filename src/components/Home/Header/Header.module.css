@@ -60,6 +60,7 @@
   border: none;
   cursor: pointer;
   transition: 0.8s;
+  border: 1px solid #fdaf27;
 }
 .button:hover {
   color: #fdaf27;
