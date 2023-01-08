@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "./Faq.module.css";
+import logo from "../../images/logo.png";
 import SingleFaq from "./SingleFaq/SingleFaq";
+import styles from "./Faq.module.css";
 
 const Faq = () => {
   const faqData = [
@@ -29,7 +30,7 @@ const Faq = () => {
     <div className="container">
       <div className={styles.header}>MYRELIA - FAQ</div>
       <div className={styles.wrapper}>
-        <img src="/images/logo.png" alt="#" className={styles.image} />{" "}
+        <img src={logo} alt="#" className={styles.image} />{" "}
         <div className={styles.faqContainer}>
           {faqData.map((el, i) => (
             <SingleFaq {...el} index={i + 1} key={i} />

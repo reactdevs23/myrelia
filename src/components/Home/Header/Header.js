@@ -14,9 +14,7 @@ const Header = () => {
         <AiOutlineClose className={styles.icon} />
       </div>
       <div className={styles.buttonContainer}>
-        <a href="/#" target="_blank" rel="noreferrer" className={styles.button}>
-          SHOP
-        </a>
+        <button className={styles.button}>SHOP</button>
       </div>
       <div className={`${styles.play} ${styles.registered}`}>
         <IoIosPeople className={styles.icon} />

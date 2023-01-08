@@ -32,7 +32,7 @@ const JoinUs = () => {
             <span className={styles.circle}></span>
             Enter myrelia.fr in the Address box and validate.
           </p>
-          <div className={styles.button}>MYRELIA.FR</div>
+          <button className={styles.button}>MYRELIA.FR</button>
         </div>
       </div>
     </div>

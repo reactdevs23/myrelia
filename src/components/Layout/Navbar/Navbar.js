@@ -30,7 +30,9 @@ const Navbar = () => {
     <section className={`${styles.navbar} `}>
       <div className={`${styles.wrapper} container`}>
         <div className={styles.navbarWrapper}>
-          <Button to="https://www.google.com/">SHOP</Button>
+          <Button to="https://www.google.com/" button="true">
+            SHOP
+          </Button>
           <div
             className={`${styles.navContainer} ${
               sidebar && styles.showNavItems

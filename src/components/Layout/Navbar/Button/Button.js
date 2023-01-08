@@ -1,11 +1,19 @@
 import React from "react";
 import styles from "./Button.module.css";
 
-const Button = ({ children, to }) => {
+const Button = ({ children, to, button }) => {
   return (
-    <a href={to} className={styles.button}>
-      <span className={styles.text}>{children}</span>
-    </a>
+    <>
+      {button ? (
+        <button className={styles.button}>
+          <span className={styles.text}>{children}</span>
+        </button>
+      ) : (
+        <a href={to} className={styles.button}>
+          <span className={styles.text}>{children}</span>
+        </a>
+      )}
+    </>
   );
 };
 

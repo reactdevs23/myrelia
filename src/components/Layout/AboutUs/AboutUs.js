@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../../images/logo.png";
 import styles from "./AboutUs.module.css";
 
 const AboutUs = () => {
@@ -8,7 +9,7 @@ const AboutUs = () => {
       <div className="container">
         <div className={`${styles.aboutUs} `}>
           <div className={styles.wrapper}>
-            <img src="/images/logo.png" alt="#" className={styles.image} />
+            <img src={logo} alt="#" className={styles.image} />
           </div>
           <div className={styles.textContainer}>
             <div className={styles.wrapper}>
@@ -28,7 +29,14 @@ const AboutUs = () => {
                   <div className={styles.list} key={i}>
                     {" "}
                     <span className={styles.circle}></span>{" "}
-                    <p className={`${styles.listItem} ${styles.text}`}>{el}</p>
+                    <a
+                      href="#/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`${styles.listItem} ${styles.text}`}
+                    >
+                      {el}
+                    </a>
                   </div>
                 ))}
               </div>

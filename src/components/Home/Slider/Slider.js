@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import image from "../../../images/image.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
@@ -27,20 +28,20 @@ const MySlider = () => {
   };
   const data = [
     {
-      image: "/images/image.png",
+      image: image,
       title: "Stacker-Pack 15 members",
       discount: "/images/ribbon.png",
       text: "JOIN US ON <b class='bold'>PLAY.MYRELIA</b> AND ON DISCORD. <b class='bold'>PLAY.MYRELIA.FR</b> AND COME AND COLLECT YOUR STARTER-PACK AND...",
       to: "#",
     },
     {
-      image: "/images/image.png",
+      image: image,
       title: "Stacker-Pack 15 members",
       text: "JOIN US ON <b class='bold'>PLAY.MYRELIA</b> AND ON DISCORD. <b class='bold'>PLAY.MYRELIA.FR</b> AND COME AND COLLECT YOUR STARTER-PACK AND...",
       to: "#",
     },
     {
-      image: "/images/image.png",
+      image: image,
       title: "Stacker-Pack 15 members",
       text: "JOIN US ON <b class='bold'>PLAY.MYRELIA</b> AND ON DISCORD. <b class='bold'>PLAY.MYRELIA.FR</b> AND COME AND COLLECT YOUR STARTER-PACK AND...",
       to: "#",
@@ -65,9 +66,7 @@ const MySlider = () => {
                   dangerouslySetInnerHTML={{ __html: el.text }}
                 ></p>
               </div>
-              <a href={el.to} className={styles.button}>
-                Buy Now
-              </a>
+              <button className={styles.button}>Buy Now</button>
             </div>
           </div>
         ))}
