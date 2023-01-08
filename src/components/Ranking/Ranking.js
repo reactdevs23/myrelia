@@ -65,7 +65,11 @@ const Ranking = () => {
         <span className={styles.heading}>Ranking</span>
         <div className={styles.itemContainer}>
           {buttons.map((el, i) => (
-            <button key={i} className={styles.item} onClick={() => setValue(i)}>
+            <button
+              key={i}
+              className={`${value === i && styles.bold} ${styles.item} `}
+              onClick={() => setValue(i)}
+            >
               {el}
             </button>
           ))}
