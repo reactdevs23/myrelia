@@ -142,4 +142,7 @@
   .buttonContainer {
     width: 100%;
   }
+  .copy::before {
+    bottom: -5px;
+  }
 }
