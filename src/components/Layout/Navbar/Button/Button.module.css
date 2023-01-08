@@ -6,7 +6,13 @@
   padding: 12px 18px;
   outline: none;
   cursor: pointer;
+  transition: 0.8s;
 }
+.button:hover {
+  background: #fdaf27;
+  transition: 0.8s;
+}
+
 .text {
   font-family: "SF UI Display";
   font-style: normal;
@@ -14,6 +20,11 @@
   font-size: 25px;
   line-height: 30px;
   color: #fdaf27;
+  transition: 0.8s;
+}
+.button:hover .text {
+  color: #000000;
+  transition: 0.8s;
 }
 @media only screen and (max-width: 1199px) {
   .text {

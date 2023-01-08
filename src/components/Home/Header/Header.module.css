@@ -59,6 +59,12 @@
   outline: none;
   border: none;
   cursor: pointer;
+  transition: 0.8s;
+}
+.button:hover {
+  color: #fdaf27;
+  background: #000;
+  border: 1px solid #fdaf27;
 }
 @media only screen and (max-width: 1199px) {
   .wrapper {
