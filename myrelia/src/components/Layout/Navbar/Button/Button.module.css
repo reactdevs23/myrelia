@@ -1,0 +1,38 @@
+.button {
+  background: #000000;
+  border: 1px solid #fdaf27;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 12px 18px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.button:hover {
+  background: #fdaf27;
+  transition: 0.8s;
+}
+
+.text {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fdaf27;
+  transition: 0.8s;
+}
+.button:hover .text {
+  color: #000000;
+  transition: 0.8s;
+}
+@media only screen and (max-width: 1199px) {
+  .text {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .button {
+    padding: 6px 14px;
+  }
+}
