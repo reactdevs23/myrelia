@@ -1,6 +1,6 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.7fr 1fr 0.7fr;
   transform: translateY(-50%);
 }
 
@@ -22,7 +22,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 120%;
 
   color: #fdaf27;
@@ -31,7 +31,7 @@
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 130%;
 
   color: #fdaf27;
