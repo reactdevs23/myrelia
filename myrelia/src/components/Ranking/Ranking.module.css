@@ -1,0 +1,191 @@
+.rankingWrapper {
+  padding-bottom: 20px;
+  margin-top: -15px;
+
+  position: relative;
+  z-index: 1;
+}
+.ranking {
+  background: #000000;
+  border: 1px solid #fdaf27;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  color: #fdaf27;
+  border: 1px solid #fdaf27;
+  padding: 30px 12px;
+}
+.itemContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+  align-items: center;
+  background: #fdaf27;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-top: 18px;
+}
+.item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  border: none;
+  outline: none;
+  background: none;
+  border-left: 2px solid #000;
+  padding: 0 13px;
+  cursor: pointer;
+}
+.bold {
+  font-weight: 600;
+}
+.item:first-child {
+  border: none;
+}
+.line {
+  padding: 0 7px;
+}
+.table {
+  background: #000000;
+  border: 1px solid #fdaf27;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+.row {
+  padding: 10px 40px;
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 90px;
+  align-items: center;
+  border-bottom: 1px solid #fdaf27;
+}
+.heading {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 125%;
+}
+.id {
+  display: block;
+  width: 44px;
+}
+.textContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.text {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 130%;
+
+  color: #fdaf27;
+  display: flex;
+}
+.activeEcoin {
+  background: #fdaf27;
+  border-radius: 6px;
+  color: #000000;
+  padding: 5px 8px;
+}
+.ecoin {
+  font-family: "Inter";
+  font-weight: 400;
+}
+@media only screen and (max-width: 991px) {
+  .row {
+    padding: 8px 30px;
+
+    grid-template-columns: 0.8fr 1fr auto;
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 20px;
+  }
+  .id {
+    width: 35px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .itemContainer {
+    grid-template-columns: auto auto;
+    gap: 15px 0;
+  }
+  .item:nth-child(3) {
+    border: none;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .rankingWrapper {
+    width: 100%;
+  }
+  .itemContainer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  .line2 {
+    display: none;
+  }
+  .row {
+    padding: 8px 20px;
+
+    grid-template-columns: 0.8fr 1fr auto;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .id {
+    width: 28px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .row {
+    padding: 8px 10px;
+
+    grid-template-columns: 0.9fr 1fr auto;
+  }
+  .heading {
+    font-size: 18px;
+  }
+  .text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .id {
+    width: 22px;
+  }
+  .activeEcoin {
+    padding: 3px 4px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .item {
+    font-size: 16px;
+  }
+  .itemContainer {
+    gap: 8px;
+  }
+}

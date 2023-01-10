@@ -3,7 +3,7 @@ import logo from "../../../images/logo.png";
 import styles from "./AboutUs.module.css";
 
 const AboutUs = () => {
-  const lists = ["BOUTiQUE", "CLASSMENT", "DISCORD"];
+  const lists = ["SHOP", "VOTE", "DISCORD"];
   return (
     <div className={styles.aboutUsWrapper}>
       <div className="container">

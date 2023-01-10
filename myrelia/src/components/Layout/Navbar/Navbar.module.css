@@ -1,0 +1,94 @@
+.navbar {
+  background: #1f1f1f;
+  padding: 15px 0;
+}
+.navbarWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.navItem {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fdaf27;
+}
+.hamburgerIcon {
+  display: none;
+}
+.active {
+  position: relative;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: #fdaf27;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media only screen and (max-width: 1199px) {
+  .navItem {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navContainer {
+    gap: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbarWrapper {
+    justify-content: start;
+    gap: 20px;
+  }
+  .navContainer {
+    display: none;
+  }
+  .showNavItems {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background: #1f1f1f;
+    padding: 15px 0;
+    padding-top: 60px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    left: 0;
+    top: 0;
+  }
+  .closeIcon {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+  }
+  .hamburgerIcon {
+    display: block;
+    cursor: pointer;
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .hamburgerIcon {
+    font-size: 35px;
+  }
+}
